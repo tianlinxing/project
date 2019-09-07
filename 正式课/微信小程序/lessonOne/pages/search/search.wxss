@@ -1,0 +1,43 @@
+input {
+    border: 1px  solid gainsboro;
+    width: 70%;
+    padding: 5rpx;
+    margin-left: 10rpx;
+}
+.num,.company,.tel {
+    display: flex;
+    margin-top: 20rpx;
+
+}
+label {
+    width: 20%;
+}
+button {
+    background: orangered;
+    width: 80%;
+    margin-top: 30rpx;
+}
+.content {
+    /* border: 1px solid gainsboro; */
+    height: 700rpx;
+    /* margin-top: 100rpx; */
+    margin: 0 5%;
+    margin-top: 100rpx;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid gainsboro;
+    margin-bottom: 20rpx;
+
+}
+
+.info {
+    border-bottom: 1px solid gainsboro;
+    padding: 10rpx;
+}
+
+.time {
+    padding: 10rpx; 
+}

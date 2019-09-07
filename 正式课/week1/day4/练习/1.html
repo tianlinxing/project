@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+
+  <script>
+    // function fn(n) {
+    //   return function(a) {
+    //     a++;
+    //     n += a
+    //     console.log(n);
+    //   };
+    // }
+    // var f = fn(10);
+    // f(1);
+    // f(2);
+    
+    let str = 'djaouoiutjjjjj';     // 定义字符串
+    var obj = {};           // 先定义一个空对象,稍后使用.
+
+    for (var i = 0; i < str.length; i++) {            //   循环字符串中每一项
+      var k = str[i];                      // 把每一项保存给变量 k (对这一步不理解可先熟悉 for循环机制);
+      if (obj[k]) {
+
+        obj[k]++;
+      } else {
+        obj[k] = 1;
+      }
+    }
+
+    console.log(obj);   // 输出{d: 1, j: 6, a: 1, o: 2, u: 2, …};
+
+    let num = 0;
+    let value = null;
+    for (var j in obj) {
+      if (obj[j] > num) {
+        num = obj[j];
+        value = j;
+      }
+    }
+
+    console.log(value, num);    // 输出 "j" 6
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/search/search",
+        "pages/swiper/swiper",
+        "pages/storage/storage",
+        "pages/cpn/cpn",
+        "pages/if-for/if-for",
+        "pages/logs/logs",
+        "pages/home/index",
+        "pages/note/note",
+        "pages/router/router",
+        "pages/router1/router1",
+        "pages/router2/router2"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#97FFFF",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小程序aaaa",
+        "backgroundColor": "#97FFFF",
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#FF0000",
+        "selectedColor": "#8B7D6B",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/home/index",
+                "text": "home",
+                "iconPath": "imgs/home2.png",
+                "selectedIconPath": "imgs/home1.png"
+            },
+            {
+                "pagePath": "pages/note/note",
+                "text": "note",
+                "iconPath": "imgs/user2.png",
+                "selectedIconPath": "imgs/user1.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap27.json"
+}

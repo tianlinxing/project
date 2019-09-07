@@ -1,0 +1,3 @@
+<!--pages/router1/router1.wxml-->
+<text>pages/router1/router1.wxml</text>
+<view catchtap="back">返回 </view>

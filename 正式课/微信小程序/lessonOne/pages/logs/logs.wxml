@@ -1,0 +1,8 @@
+<view class="container">
+    <image src="/imgs/logo.jpeg" catch:tap="jumpToHome" data-Info="345"></image>
+    <text class="name">骨架终结者</text>
+    <text class="content">hello World</text>
+    <navigator open-type="navigate" url="/pages/router/router">
+    前进
+    </navigator>
+</view>

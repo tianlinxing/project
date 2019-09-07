@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="title">{{title}}</view>
+    <view class="more" catchtap="jumpToMore">
+        查看更多
+        <text class="iconfont icon-jiantou2"></text>
+    </view>
+</view>

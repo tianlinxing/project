@@ -1,0 +1,35 @@
+{
+    "pages": [
+        "pages/home/hmoe",
+        "pages/moreCard/moreCard",
+        "pages/logs/logs",
+        "pages/note/note",
+        "pages/detail/detail"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#98F5FF",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小程序",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/home/hmoe",
+                "text": "首页",
+                "iconPath": "imgs/home2.png",
+                "selectedIconPath": "imgs/home1.png"
+            },
+            {
+                "pagePath": "pages/note/note",
+                "text": "记事本",
+                "iconPath": "imgs/user2.png",
+                "selectedIconPath": "imgs/user1.png"
+            }
+        ]
+    },
+    "requiredBackgroundModes": ["audio"],
+    "sitemapLocation": "sitemap.json"
+}

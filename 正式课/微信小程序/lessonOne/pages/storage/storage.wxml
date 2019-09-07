@@ -1,0 +1,5 @@
+<!-- button的type支持三种类型primary、warn、 -->
+<button type="primary" catchtap="button" >点击</button>
+<button  catchtap="clear" type="warn">清除</button>
+
+<text class="iconfont icon-dianzan icon"></text>

@@ -1,0 +1,7 @@
+button {
+    margin-bottom: 20rpx;
+}
+.icon {
+    color: red;
+    font-size: 60rpx;
+}

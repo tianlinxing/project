@@ -1,0 +1,6 @@
+.box {
+    background: orangered;
+    width: 200rpx;
+    height: 200rpx;
+    margin: 200rpx auto;
+}

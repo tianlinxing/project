@@ -1,0 +1,19 @@
+{
+  "name": "myname",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "myless": "lessc 1.less 1.css"
+  },
+  "author": "田琳兴",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}

@@ -1,0 +1,8 @@
+<view>这是使用组件的页面</view>
+
+<!-- info是第一种往子组件传参的形式，必须在子组件的properties里接收一下才可以使用 -->
+<!-- data-set只要写上，那么在子组件里直接调用this.dataset就可以拿到传过去的值 -->
+<!-- catch:event="fn"event是从子组件传过来的事件，子组件一执行this.triggerEvent方法，那么父页面的event事件就会让fn执行，在fn的事件源（e）里的e.datail就可以拿到从子组件传过来的值-->
+<cpn1 info="123" data-set="999" catch:event="fn"></cpn1>
+
+

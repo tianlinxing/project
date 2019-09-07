@@ -1,0 +1,2 @@
+<view catchtap="tap">{{info}}</view>
+<text class="iconfont icon-dianzan icon"></text>

@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="logo">
+        <image src="{{cardDetail.logoUrl}}"></image>
+    </view>
+    <view class="title">{{cardDetail.title}}</view>
+    <view class="content">{{cardDetail.content}}</view>
+    <view class="tags">
+        <block wx:for="{{cardDetail.tags}}">
+            <text>{{item}}</text>
+        </block>
+    </view>
+    <view class="list">
+        <block wx:for="{{cardDetail.detail}}">
+            <view><text class="iconfont icon-dianzan xin"></text>{{item}}</view>
+        </block>
+        <text class="iconfont icon-dianzan pink-xin" animation="{{animationData}}" catchtap="change"></text>
+    </view>
+</view>

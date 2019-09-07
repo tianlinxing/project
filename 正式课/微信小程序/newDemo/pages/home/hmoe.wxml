@@ -1,0 +1,5 @@
+<swiper-cpn data="{{swiper}}"></swiper-cpn>
+<title-cpn title="热门银行"></title-cpn>
+<bank-list-cpn data="{{bankList}}"></bank-list-cpn>
+<title-cpn title="热门卡片"></title-cpn>
+<card-list-cpn data="{{cardList}}"></card-list-cpn>

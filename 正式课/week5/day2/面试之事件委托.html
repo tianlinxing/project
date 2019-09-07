@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 300px;
+            display: inline-block;
+        }
+
+        .left {
+            width: 300px;
+            height: 100%;
+            float: left;
+            background-color: aqua;
+        }
+
+        .center {
+            width: auto;
+            height: 100%;
+            background-color: blueviolet;
+        }
+
+        .right {
+            width: 300px;
+            height: 100%;
+            float: right;
+            background-color: yellowgreen;
+        }
+
+        /* .box {
+            width: 100%;
+            height: 300px;
+            display: flex;
+        }
+
+        .left {
+            width: 300px;
+            height: 100%;
+            background-color: aqua;
+        }
+
+        .center {
+            flex: 1;
+            background-color: blueviolet;
+        }
+
+        .right {
+            width: 300px;
+            height: 100%;
+            background-color: yellowgreen;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <ul>
+        <!-- <li>习近平检阅中国人民解放军海军仪仗队item1</li>
+        <li>习近平检阅中国人民解放军海军仪仗队item2</li>
+        <li>习近平检阅中国人民解放军海军仪仗队item3</li>
+        <li>习近平检阅中国人民解放军海军仪仗队item4</li>
+        <li>习近平检阅中国人民解放军海军仪仗队item5</li>
+        <li>习近平检阅中国人民解放军海军仪仗队item6</li> -->
+
+    </ul>
+    <script>
+        const ulList = document.getElementsByTagName('ul');
+
+        const data = [{ 'm': '习近平检阅中国人民解放军海军仪仗队item1' }, { 'm': '习近平检阅中国人民解放军海军仪仗队item1' }, { 'm': '习近平检阅中国人民解放军海军仪仗队item1' }, { 'm': '习近平检阅中国人民解放军海军仪仗队item1' }, { 'm': '习近平检阅中国人民解放军海军仪仗队item1' }];
+        let str = '';
+
+        data.forEach(item => {
+
+            const { m } = item;
+            str += `<li>${m}</li>`;
+        });
+        ulList[0].innerHTML += str;
+
+        const liList = document.getElementsByTagName('li');
+        ulList[0].onclick = function (e) {
+            for (let i = 0; i < liList.length; i++) {
+                if (liList[i] === e.target) {
+                    console.log(i);
+                }
+
+            }
+
+
+        }
+        let n = 60;
+        ulList[0].innerHTML += `<button>${n}</button>`;
+        const btn = document.getElementsByTagName('button');
+
+        btn[0].onclick = function () {
+            let timer = setInterval(function () {
+                n = n - 1;
+                btn[0].innerText = n;
+                if (n === 0) {
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
+
+        /**
+         * 用递归算法实现,数组长度为N 且元素的随机数在2~32之间不重复的值
+         * 
+         * */
+        let ran = 0;
+        let arr = [];
+        function randomArr(num) {
+            if (num === 0 || num > 32) return;
+            ran = Math.round(Math.random() * 32);
+            if (ran > 1 && ran < 33) {
+                if (arr.indexOf(ran) === -1) {
+                    arr.push(ran);
+                }
+            }
+
+            if (arr.length < num) {
+                return randomArr(num);
+            }
+
+            console.log(arr);
+            arr = [];
+
+        }
+        randomArr(31)
+
+
+        function A(name) {
+            if (name) {
+                this.name = name;
+            }
+        }
+
+        function B(name) {
+            this.name = name;
+        }
+
+        function C(name) {
+            this.name = name | 'abc';
+            return { name: 'jack' }
+        }
+
+        A.prototype.name = 'Tom';
+        B.prototype.name = 'Tom';
+        C.prototype.name = 'Tom';
+        console.log(new A().name);
+        console.log(new B().name);
+        console.log(new C().name);
+        
+        let promise = new Promise((resolve, reject)=> {
+            resolve('success1');
+            reject('error');
+            resolve('success2');
+        })
+
+        promise.then(res => {
+            console.log(res);
+            
+        }).then(res => {
+            console.log(res);
+        }).catch(data => {
+            console.log(data);
+        })
+    </script>
+</body>
+
+</html>

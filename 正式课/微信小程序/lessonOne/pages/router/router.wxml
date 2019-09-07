@@ -1,0 +1,2 @@
+<text catchtap="jump">我是router页面</text>
+<view catchtap="back">返回</view>

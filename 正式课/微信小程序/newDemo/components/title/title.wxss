@@ -1,0 +1,13 @@
+@import "../../commom/css.wxss";
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20rpx;
+    
+}
+
+.more {
+    font-size: 32rpx;
+    color: rgb(128, 126, 126);
+}

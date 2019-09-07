@@ -1,0 +1,17 @@
+<view class="container" style="{{flag ? 'height: 330rpx' : 'height: auto'}}">
+    <block wx:for="{{data}}">
+        <view class="box">
+            <image src="{{item.bankLogoUrl}}" class="bankLogo"></image>
+            <view class="bankName">{{item.bankName}}</view>
+        </view>
+    </block>
+</view>
+    <view class="showMore" wx:if="{{flag}}" catchtap="show">
+        <text>展开更多</text>
+        <text class="iconfont icon-jiantou1 jiantou"></text>
+    </view>
+
+    <view class="hideMore" wx:else catchtap="show">
+        <text>收起更多</text>
+        <text class="iconfont icon-jiantou1-copy jiantou"></text>
+    </view>

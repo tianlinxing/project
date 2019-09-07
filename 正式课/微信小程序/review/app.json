@@ -1,0 +1,17 @@
+{
+    "pages": [
+        "pages/animation/animation",
+        "pages/index/index",
+        "pages/home/home"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小程序",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": true
+    },
+    "requiredBackgroundModes": ["audio"],
+    "sitemapLocation": "sitemap.json"
+}

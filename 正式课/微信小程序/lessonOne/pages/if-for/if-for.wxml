@@ -1,0 +1,13 @@
+<!-- <view>{{vlaue}}</view> -->
+<!-- 1、如果在行内进行内做逻辑判断用到转布尔的值了，一定要用{{}}包起来 -->
+<!-- block组件没有具体的实际意义，就是一个帮助其他组件渲染的助手 -->
+<block>
+    <view hidden="{{true}}">你好</view>
+    <view wx:if="{{false}}">你好111</view>
+    <view>你好2222</view>
+</block>
+<block wx:for="{{list}}">
+    <view>{{item}}</view>
+</block>
+<!-- <view wx:for="{{list}}" wx:for-item="ite" wx:key="">{{ite}}{{index}}</view> -->
+

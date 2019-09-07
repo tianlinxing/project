@@ -1,0 +1,50 @@
+@import "../../commom/css.wxss";
+
+.logo image {
+    width: 80%;
+    margin: 40rpx auto;
+    display: block;
+    box-shadow: 1px 1px 10px;
+}
+
+.title {
+    color: orangered;
+    font-size: 42rpx;
+    text-align: center;
+}
+
+.content {
+    color: greenyellow;
+    text-align: center;
+}
+
+.tags {
+    text-align: center;
+}
+.tags text {
+    font-size: 24rpx;
+    border: 1px solid gold;
+    padding: 0 10rpx;
+    color: rgb(241, 198, 4);
+    margin-right: 10rpx;
+    background: rgba(224, 202, 72, 0.158);
+}
+
+.list {
+    padding-left: 40rpx;
+    margin-top: 50rpx;
+    color: rgb(255, 0, 200);
+    position: relative;
+}
+.xin {
+    color: red;
+    margin-right: 20rpx;
+}
+
+.pink-xin {
+    position: absolute;
+    top: 30rpx;
+    right: 30rpx;
+    font-size: 60rpx;
+    color: rgb(236, 145, 217);
+}

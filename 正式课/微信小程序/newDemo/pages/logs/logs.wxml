@@ -1,0 +1,5 @@
+<view class="container">
+    <image src="/imgs/logo.jpeg" catchtap="jumpToHome"></image>
+    <text class="title" >骨架终结者</text>
+    <text class="content">helloworld</text>
+</view>
